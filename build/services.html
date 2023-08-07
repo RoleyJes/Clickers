@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <title>Clickers</title>
+  </head>
+  <body>
+    <header>
+      <!-- Mobile Nav -->
+      <aside class="hidden transition-all duration-500" id="mobileNav">
+        <div
+          class="bg-[#171717] z-[1000] fixed flex items-center justify-center w-screen h-screen">
+          <div
+            class="absolute right-[3rem] top-[5rem] cursor-pointer"
+            id="closeMenu">
+            <img src="assets/close.svg" alt="" />
+          </div>
+
+          <ul class="flex flex-col items-center gap-8 font-inter text-white">
+            <li class="text-[13px] hover:text-secondary-linkblue">
+              <a href="index.html" target="_blank">Home</a>
+            </li>
+            <li class="text-[13px] hover:text-secondary-linkblue">
+              <a href="team.html" target="_blank">Team</a>
+            </li>
+            <li class="text-[13px] hover:text-secondary-linkblue">
+              <a href="#">Services</a>
+            </li>
+            <li class="text-[13px] hover:text-secondary-linkblue">
+              <a href="blog.html" target="_blank">Blog</a>
+            </li>
+            <li class="text-[13px] hover:text-secondary-linkblue">
+              <a href="contact.html" target="_blank">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Nav Bar -->
+      <nav
+        class="flex justify-between items-center h-[4rem] bg-black pl-2 pr-8 lg:h-28 xl:pr-[20rem]">
+        <div class="lg:hidden z-20">
+          <img src="assets/logo nav mobile.png" alt="logo" />
+        </div>
+        <div class="hidden lg:block ml-24 z-20">
+          <img src="assets/logo nav desktop.png" alt="logo" />
+        </div>
+
+        <!-- Desktop nav links -->
+        <div class="hidden lg:block lg:z-20">
+          <ul
+            class="flex items-center justify-center gap-28 font-inter text-black lg:text-white">
+            <li
+              class="hover:text-secondary-linkblue transition-all duration-300">
+              <a href="index.html" target="_blank">Home</a>
+            </li>
+            <li
+              class="hover:text-secondary-linkblue transition-all duration-300">
+              <a href="team.html" target="_blank">Team</a>
+            </li>
+            <li
+              class="hover:text-secondary-linkblue transition-all duration-300">
+              <a href="#">Services</a>
+            </li>
+            <li
+              class="hover:text-secondary-linkblue transition-all duration-300">
+              <a href="blog.html" target="_blank">Blog</a>
+            </li>
+            <li
+              class="hover:text-secondary-linkblue transition-all duration-300">
+              <a href="contact.html" target="_blank">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hamburger -->
+        <div class="cursor-pointer lg:hidden" id="openMenu">
+          <img src="assets/white hamburger.svg" alt="menu" />
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section
+        class="h-[382px] text-center font-inter relative bg-[#122b4898] lg:h-[500px]">
+        <!--Mobile img  -->
+        <img
+          class="z-[-1] w-full h-full object-cover absolute top-0 mix-blend-overlay md:hidden"
+          src="assets/Rectangle 2.png"
+          alt="lady and man smiling" />
+
+        <!-- Desktop img -->
+        <img
+          class="z-[-1] w-full h-full object-cover absolute top-0 mix-blend-overlay hidden md:block"
+          src="assets/Rectangle 2 desktop.png"
+          alt="lady and man smiling" />
+
+        <div
+          class="text-white h-full flex flex-col justify-center items-center gap-y-4 lg:pt-[12rem] lg:gap-y-6">
+          <p class="z-10 font-bold text-5xl">Services</p>
+          <p class="font-medium px-2">Homes > Services</p>
+        </div>
+      </section>
+    </header>
+
+    <!-- Section -->
+    <section class="pt-28 pb-60 bg-bground-light lg:pt-0">
+      <div
+        class="bg-bground-verylightblue mb-20 py-8 px-16 text-center font-roboto lg:mb-32 lg:py-16">
+        <p class="mb-2 text-secondary-blue text-[2rem]">Services</p>
+        <p class="text-black text-[2rem] font-semibold leading-tight">
+          We Offer A Wide Range Of Services
+        </p>
+      </div>
+
+      <div class="max-w-[97.5rem] mx-auto lg:px-32">
+        <div class="grid lg:grid-cols-3 gap-12">
+          <div class="mx-auto relative">
+            <img loading="lazy" src="assets/Group 49.png" alt="" />
+
+            <div
+              class="bg-secondary-blue w-60 h-60 rounded-full font-roboto text-white font-medium flex items-center justify-center text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[2rem]">
+              <p>Web Development</p>
+            </div>
+          </div>
+
+          <div class="mx-auto relative">
+            <img loading="lazy" src="assets/Group 49.png" alt="" class="" />
+
+            <div
+              class="font-roboto text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <p class="text-[2rem] leading-tight text-white">
+                Mobile <br />
+                Development
+              </p>
+              <p class="font-lato mt-4 text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna
+              </p>
+
+              <div class="h-[0.5px] bg-white z-10 w-full mt-4 mb-7"></div>
+
+              <p
+                class="text-2xl text-white hover:scale-105 transition-all duration-300">
+                <a href="#">Read More &RightArrow;</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="mx-auto relative">
+            <img loading="lazy" src="assets/Group 49.png" alt="" />
+
+            <div
+              class="bg-secondary-blue w-60 h-60 rounded-full font-roboto text-white font-medium flex items-center justify-center text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[2rem]">
+              <p>Web Development</p>
+            </div>
+          </div>
+
+          <div class="mx-auto relative">
+            <img loading="lazy" src="assets/Group 49.png" alt="" />
+
+            <div
+              class="bg-secondary-blue w-60 h-60 rounded-full font-roboto text-white font-medium flex items-center justify-center text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[2rem]">
+              <p>Web Development</p>
+            </div>
+          </div>
+
+          <div class="mx-auto relative">
+            <img loading="lazy" src="assets/Group 49.png" alt="" />
+
+            <div
+              class="bg-secondary-blue w-60 h-60 rounded-full font-roboto text-white font-medium flex items-center justify-center text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[2rem]">
+              <p>Web Development</p>
+            </div>
+          </div>
+
+          <div class="mx-auto relative">
+            <img loading="lazy" src="assets/Group 49.png" alt="" />
+
+            <div
+              class="bg-secondary-blue w-60 h-60 rounded-full font-roboto text-white font-medium flex items-center justify-center text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[2rem]">
+              <p>Web Development</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-bground-verydarkblue pt-20 pb-6 text-white md:pt-28 md:pb-10">
+      <div
+        class="mb-16 grid gap-32 text-center place-items-center lg:grid-cols-3 lg:text-start lg:items-baseline lg:mb-28 lg:px-20">
+        <div class="font-inter flex flex-col gap-y-6">
+          <p class="font-bold text-[32px]">Services</p>
+          <p class="text-2xl">Web Development</p>
+          <p class="font-medium">Mobile Development</p>
+          <p class="font-medium">UI/UX Design</p>
+          <p class="font-medium">Mobile Development</p>
+        </div>
+
+        <div class="font-lato flex flex-col gap-y-6 lg:order-last">
+          <p class="font-bold text-[32px]">Contact</p>
+          <p
+            class="text-2xl flex gap-x-7 items-center justify-center lg:justify-start">
+            <img src="assets/location.svg" alt="" />5, Parliamentary Abuja
+          </p>
+          <p
+            class="text-2xl flex gap-x-7 items-center justify-center lg:justify-start">
+            <img src="assets/call.svg" alt="" />080900002
+          </p>
+          <p
+            class="text-2xl flex gap-x-7 items-center justify-center lg:justify-start">
+            <img src="assets/mail.svg" alt="" />Logo@gmail.com
+          </p>
+          <p
+            class="text-2xl flex gap-x-7 items-center justify-center lg:justify-start">
+            <img src="assets/clock.svg" alt="" />Mon-Friday:9:00-18:00
+          </p>
+        </div>
+
+        <div>
+          <p class="font-bold text-[32px] mb-8">Quick Links</p>
+          <ul class="font-inter flex flex-col gap-y-6">
+            <li
+              class="font-medium hover:text-secondary-linkblue transition-all duration-300">
+              <a href="team.html" target="_blank">Teams</a>
+            </li>
+            <li
+              class="font-medium hover:text-secondary-linkblue transition-all duration-300">
+              <a href="#">Services</a>
+            </li>
+            <li
+              class="font-medium hover:text-secondary-linkblue transition-all duration-300">
+              <a href="blog.html" target="_blank">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="border-white" />
+
+      <div
+        class="mt-4 lg:px-32 flex flex-col justify-center items-center lg:block">
+        <div class="mb-8 md:mb-0">
+          <img src="assets/logo footer.png" alt="" />
+        </div>
+
+        <p class="font-lato font-semibold lg:text-right lg:text-2xl">
+          © Copyrights 2023 Clickers Inc. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Project Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
